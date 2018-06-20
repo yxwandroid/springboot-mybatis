@@ -8,20 +8,23 @@
 
     <context id="mysqlgenerator" targetRuntime="MyBatis3">
 
+        <!--配置数据库-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
         connectionURL="jdbc:mysql://localhost:3306/nfc_database"
         userId="root"
         password="8686886" />
 
+        <!--配置model生成的位置-->
         <javaModelGenerator targetPackage="com.wilson.nfc.model" targetProject="src/main/java"/>
-
+        <!--配置xml生成的位置-->
         <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
-
+        <!--配置mapper生成的位置-->
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.wilson.nfc.mapper" targetProject="src/main/java"/>
 
 
+        <!--配置需要生成的表-->
         <table tableName="nfc_user" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
-        <!--<table tableName="nfc_shipping" domainObjectName="Shipping" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
+        <table tableName="nfc_shipping" domainObjectName="Shipping" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
         <!--<table tableName="nfc_product" domainObjectName="Product" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
         <!--<table tableName="nfc_pay_info" domainObjectName="PayInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
         <!--<table tableName="nfc_order_item" domainObjectName="OrderItem" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>-->
