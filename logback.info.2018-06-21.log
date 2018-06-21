@@ -1,0 +1,485 @@
+Starting NfcJavaApplication on wilson.local with PID 41444 (/Users/yangxuewu/CodingDemo/nfc/nfc_java/target/classes started by yangxuewu in /Users/yangxuewu/CodingDemo/nfc/nfc_java)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13e39c73: startup date [Thu Jun 21 14:40:43 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6fc088c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yangxuewu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 4874 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+加载：MyBatis分页插件PageHelper
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.UserController.findOneCity(java.lang.Integer)
+Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13e39c73: startup date [Thu Jun 21 14:40:43 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Context refreshed
+Found {0} custom documentation plugin(s)
+Scanning for api listing references
+Group for method ProductList was product-controller
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Group for method findOneCity was user-controller
+Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Group for method getUserInfo was user-controller
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+Created resource listing Path: /default/product-controller Description: product-controller Position: 0
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache models with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Group for method ProductList was product-controller
+Group for method ProductList was product-controller
+Cache Key Generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache models with key com.wilson.nfc.model.User(true)
+Cache key generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
+Cache Key Generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelDependencies with key com.wilson.nfc.model.User(true)
+Cache key generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
+Cache key generated: /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Group for method findOneCity was user-controller
+Group for method findOneCity was user-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Group for method getUserInfo was user-controller
+Group for method getUserInfo was user-controller
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path ''
+Started NfcJavaApplication in 9.904 seconds (JVM running for 10.84)
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@13e39c73: startup date [Thu Jun 21 14:40:43 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Unregistering JMX-exposed beans
+Starting NfcJavaApplication on wilson.local with PID 42114 (/Users/yangxuewu/CodingDemo/nfc/nfc_java/target/classes started by yangxuewu in /Users/yangxuewu/CodingDemo/nfc/nfc_java)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67a20f67: startup date [Thu Jun 21 14:52:19 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d24a560f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yangxuewu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 3032 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+加载：MyBatis分页插件PageHelper
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.UserController.findOneCity(java.lang.Integer)
+Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67a20f67: startup date [Thu Jun 21 14:52:19 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Context refreshed
+Found {0} custom documentation plugin(s)
+Scanning for api listing references
+Group for method ProductList was product-controller
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Group for method findOneCity was user-controller
+Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Group for method getUserInfo was user-controller
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+Created resource listing Path: /default/product-controller Description: product-controller Position: 0
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache models with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Group for method ProductList was product-controller
+Group for method ProductList was product-controller
+Cache Key Generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache models with key com.wilson.nfc.model.User(true)
+Cache key generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
+Cache Key Generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelDependencies with key com.wilson.nfc.model.User(true)
+Cache key generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
+Cache key generated: /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Group for method findOneCity was user-controller
+Group for method findOneCity was user-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Group for method getUserInfo was user-controller
+Group for method getUserInfo was user-controller
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path ''
+Started NfcJavaApplication in 7.625 seconds (JVM running for 8.372)
+Starting ServiceTest on wilson.local with PID 42412 (started by yangxuewu in /Users/yangxuewu/CodingDemo/nfc/nfc_java)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@43f02ef2: startup date [Thu Jun 21 15:08:57 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e1195a3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+加载：MyBatis分页插件PageHelper
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.UserController.findOneCity(java.lang.Integer)
+Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@43f02ef2: startup date [Thu Jun 21 15:08:57 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Context refreshed
+Found {0} custom documentation plugin(s)
+Scanning for api listing references
+Group for method ProductList was product-controller
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Group for method findOneCity was user-controller
+Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Group for method getUserInfo was user-controller
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+Created resource listing Path: /default/product-controller Description: product-controller Position: 0
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache models with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Group for method ProductList was product-controller
+Group for method ProductList was product-controller
+Cache Key Generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache models with key com.wilson.nfc.model.User(true)
+Cache key generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
+Cache Key Generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelDependencies with key com.wilson.nfc.model.User(true)
+Cache key generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
+Cache key generated: /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Group for method findOneCity was user-controller
+Group for method findOneCity was user-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Group for method getUserInfo was user-controller
+Group for method getUserInfo was user-controller
+Started ServiceTest in 7.327 seconds (JVM running for 9.273)
+HikariPool-1 - Starting...
+HikariPool-1 - Start completed.
+ServiceTest-----admin
+Closing org.springframework.web.context.support.GenericWebApplicationContext@43f02ef2: startup date [Thu Jun 21 15:08:57 CST 2018]; root of context hierarchy
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67a20f67: startup date [Thu Jun 21 14:52:19 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Unregistering JMX-exposed beans
+Starting NfcJavaApplication on wilson.local with PID 44764 (/Users/yangxuewu/CodingDemo/nfc/nfc_java/target/classes started by yangxuewu in /Users/yangxuewu/CodingDemo/nfc/nfc_java)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57c758ac: startup date [Thu Jun 21 15:59:48 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75782c8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yangxuewu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 4533 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+加载：MyBatis分页插件PageHelper
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.UserController.findOneCity(java.lang.Integer)
+Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57c758ac: startup date [Thu Jun 21 15:59:48 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Context refreshed
+Found {0} custom documentation plugin(s)
+Scanning for api listing references
+Group for method ProductList was product-controller
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Group for method findOneCity was user-controller
+Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Group for method getUserInfo was user-controller
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Created resource listing Path: /default/product-controller Description: product-controller Position: 0
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache models with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Group for method ProductList was product-controller
+Group for method ProductList was product-controller
+Cache Key Generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache models with key com.wilson.nfc.model.User(true)
+Cache key generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
+Cache Key Generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelDependencies with key com.wilson.nfc.model.User(true)
+Cache key generated: com.wilson.nfc.model.User(true)
+Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
+Cache key generated: /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Group for method findOneCity was user-controller
+Group for method findOneCity was user-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Group for method getUserInfo was user-controller
+Group for method getUserInfo was user-controller
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path ''
+Started NfcJavaApplication in 9.334 seconds (JVM running for 10.185)
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@57c758ac: startup date [Thu Jun 21 15:59:48 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Unregistering JMX-exposed beans
+Starting ControllerTest on wilson.local with PID 48173 (started by yangxuewu in /Users/yangxuewu/CodingDemo/nfc/nfc_java)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@28261e8e: startup date [Thu Jun 21 16:48:31 CST 2018]; root of context hierarchy
+Skipping MapperFactoryBean with name 'productMapper' and 'com.wilson.nfc.mapper.ProductMapper' mapperInterface. Bean already defined with the same name!
+Skipping MapperFactoryBean with name 'shippingMapper' and 'com.wilson.nfc.mapper.ShippingMapper' mapperInterface. Bean already defined with the same name!
+Skipping MapperFactoryBean with name 'userMapper' and 'com.wilson.nfc.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+No MyBatis mapper was found in '[com.wilson.nfc.mapper]' package. Please check your configuration.
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d4cdce1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+加载：MyBatis分页插件PageHelper
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@28261e8e: startup date [Thu Jun 21 16:48:31 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Context refreshed
+Found {0} custom documentation plugin(s)
+Scanning for api listing references
+Group for method ProductList was product-controller
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Group for method getUserInfo was user-controller
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Created resource listing Path: /default/product-controller Description: product-controller Position: 0
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache models with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Group for method ProductList was product-controller
+Group for method ProductList was product-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Group for method getUserInfo was user-controller
+Group for method getUserInfo was user-controller
+Started ControllerTest in 7.649 seconds (JVM running for 9.34)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@28261e8e: startup date [Thu Jun 21 16:48:31 CST 2018]; root of context hierarchy
+Starting ControllerTest on wilson.local with PID 51358 (started by yangxuewu in /Users/yangxuewu/CodingDemo/nfc/nfc_java)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@28261e8e: startup date [Thu Jun 21 21:17:59 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e1195a3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+加载：MyBatis分页插件PageHelper
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@28261e8e: startup date [Thu Jun 21 21:17:59 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Context refreshed
+Found {0} custom documentation plugin(s)
+Scanning for api listing references
+Group for method ProductList was product-controller
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Group for method getUserInfo was user-controller
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+Created resource listing Path: /default/product-controller Description: product-controller Position: 0
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache models with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Group for method ProductList was product-controller
+Group for method ProductList was product-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Group for method getUserInfo was user-controller
+Group for method getUserInfo was user-controller
+Started ControllerTest in 8.276 seconds (JVM running for 10.348)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@28261e8e: startup date [Thu Jun 21 21:17:59 CST 2018]; root of context hierarchy
+Starting NfcJavaApplication on wilson.local with PID 51433 (/Users/yangxuewu/CodingDemo/nfc/nfc_java/target/classes started by yangxuewu in /Users/yangxuewu/CodingDemo/nfc/nfc_java)
+No active profile set, falling back to default profiles: default
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67a20f67: startup date [Thu Jun 21 21:20:42 CST 2018]; root of context hierarchy
+Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e8ddf9eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tomcat initialized with port(s): 8080 (http)
+Initializing ProtocolHandler ["http-nio-8080"]
+Starting service [Tomcat]
+Starting Servlet Engine: Apache Tomcat/8.5.31
+The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/yangxuewu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 3101 ms
+Servlet dispatcherServlet mapped to [/]
+Mapping filter: 'characterEncodingFilter' to: [/*]
+Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+Mapping filter: 'httpPutFormContentFilter' to: [/*]
+Mapping filter: 'requestContextFilter' to: [/*]
+加载：MyBatis分页插件PageHelper
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67a20f67: startup date [Thu Jun 21 21:20:42 CST 2018]; root of context hierarchy
+Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+Registering beans for JMX exposure on startup
+Bean with name 'dataSource' has been autodetected for JMX exposure
+Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+Context refreshed
+Found {0} custom documentation plugin(s)
+Scanning for api listing references
+Group for method ProductList was product-controller
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Group for method getUserInfo was user-controller
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Created resource listing Path: /default/product-controller Description: product-controller Position: 0
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache models with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache Key Generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
+Cache key generated: com.github.pagehelper.PageInfo(true)
+Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Group for method ProductList was product-controller
+Group for method ProductList was product-controller
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache models with key java.lang.String(true)
+Cache Key Generated: java.lang.String(true)
+Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Group for method getUserInfo was user-controller
+Group for method getUserInfo was user-controller
+Starting ProtocolHandler ["http-nio-8080"]
+Using a shared selector for servlet write/read
+Tomcat started on port(s): 8080 (http) with context path ''
+Started NfcJavaApplication in 7.037 seconds (JVM running for 7.903)
+Initializing Spring FrameworkServlet 'dispatcherServlet'
+FrameworkServlet 'dispatcherServlet': initialization started
+FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms

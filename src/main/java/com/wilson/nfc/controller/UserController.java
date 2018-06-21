@@ -27,9 +27,9 @@ public class UserController {
         return "userName";
 
     }
-    @ApiOperation(value = "获取用户信息",notes = "获取登录用户信息")
-    @RequestMapping(value = "/api/user/id", method = RequestMethod.GET)
-    public User findOneCity(@RequestParam(value = "id", required = true) Integer id) {
-        return userService.findUserById(id);
-    }
+//    @ApiOperation(value = "获取用户信息",notes = "获取登录用户信息")
+//    @RequestMapping(value = "/api/user/id", method = RequestMethod.GET)
+//    public User findOneCity(@RequestParam(value = "id", required = true) Integer id) {
+//        return userService.findUserById(id);
+//    }
 }
