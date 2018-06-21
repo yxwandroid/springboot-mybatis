@@ -2,6 +2,9 @@ package com.wilson.nfc.mapper;
 
 import com.wilson.nfc.model.Product;
 import com.wilson.nfc.model.ProductWithBLOBs;
+import io.swagger.models.auth.In;
+
+import java.util.List;
 
 public interface ProductMapper {
     /**
@@ -59,4 +62,6 @@ public interface ProductMapper {
      * @mbggenerated Thu Jun 21 21:30:20 CST 2018
      */
     int updateByPrimaryKey(Product record);
+
+    List<Product> selectByCategoryId(Integer id);
 }

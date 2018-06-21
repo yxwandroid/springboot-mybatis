@@ -1,35 +1,35 @@
 package com.wilson.nfc.controller;
 
+import com.wilson.nfc.common.ServerResponse;
 import com.wilson.nfc.model.User;
 import com.wilson.nfc.service.UserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by yangxuewu on 2018/6/19.
  */
-@RestController
+@Controller
+@RequestMapping("/user/")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
 
-
-    @ApiOperation(value = "获取用户信息",notes = "获取登录用户信息")
-    @RequestMapping(value = "getUserInfo", method = RequestMethod.GET)
-    public String getUserInfo() {
-
-        return "userName";
-
+    @ApiOperation(value = "登录")
+    @RequestMapping(value = "login", method = RequestMethod.POST)
+    public ServerResponse<User> login(  String userName, String password) {
+        ServerResponse<User> Response = userService.login(userName, password);
+        return Response;
     }
-//    @ApiOperation(value = "获取用户信息",notes = "获取登录用户信息")
-//    @RequestMapping(value = "/api/user/id", method = RequestMethod.GET)
-//    public User findOneCity(@RequestParam(value = "id", required = true) Integer id) {
-//        return userService.findUserById(id);
-//    }
+
+    @ApiOperation(value = "根据id获取用户信息")
+    @RequestMapping(value = "id", method = RequestMethod.GET)
+    public ServerResponse<User> findUserById( @RequestParam(value = "id", defaultValue = "1") Integer id) {
+        ServerResponse<User> Response = userService.findUserById(id);
+        return Response;
+    }
 }

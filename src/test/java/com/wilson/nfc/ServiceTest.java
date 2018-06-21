@@ -1,5 +1,6 @@
 package com.wilson.nfc;
 
+import com.wilson.nfc.common.ServerResponse;
 import com.wilson.nfc.model.User;
 import com.wilson.nfc.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -23,7 +24,7 @@ public class ServiceTest {
 
     @Test
     public void testService() {
-        User user = userService.findUserById(1);
-        log.info("ServiceTest" + "-----" + user.getUsername());
+        ServerResponse<User> user = userService.findUserById(1);
+        log.info("ServiceTest" + "-----" + user.getData().getUsername());
     }
 }

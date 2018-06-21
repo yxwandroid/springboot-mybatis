@@ -1,6 +1,8 @@
 package com.wilson.nfc.controller;
 
 import com.wilson.nfc.NfcJavaApplication;
+import com.wilson.nfc.common.ServerResponse;
+import com.wilson.nfc.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,8 +28,8 @@ public class ControllerTest {
 
     @Test
     public void testCreateMarker() {
-        String response = userController.getUserInfo();
-        log.info(response);
+        ServerResponse<User> response = userController.findUserById(1);
+        log.info(response.getData().getUsername());
     }
 
 }
