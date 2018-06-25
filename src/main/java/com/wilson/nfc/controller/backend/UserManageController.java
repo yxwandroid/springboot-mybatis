@@ -1,11 +1,9 @@
-package com.wilson.nfc.controller.portal;
+package com.wilson.nfc.controller.backend;
 
 import com.wilson.nfc.common.ServerResponse;
 import com.wilson.nfc.model.User;
 import com.wilson.nfc.service.UserService;
 import io.swagger.annotations.ApiOperation;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,18 +12,21 @@ import org.springframework.web.bind.annotation.*;
  * Created by yangxuewu on 2018/6/19.
  */
 @RestController
-@RequestMapping("/user/")
-public class UserController {
+@RequestMapping("/manage/user")
+public class UserManageController {
 
     @Autowired
     private UserService userService;
-    private static Logger log = LoggerFactory.getLogger(UserController.class);
+
 
 
     @ApiOperation(value = "注册")
     @RequestMapping(value = "register", method = RequestMethod.POST)
     public ServerResponse<User> register(@RequestBody User user) {
         ServerResponse<User> response = userService.regieter(user);
+        if (response.isSuccess()){
+            return response;
+        }
         return response;
     }
 
@@ -33,12 +34,9 @@ public class UserController {
     @RequestMapping(value = "login", method = RequestMethod.POST)
     public ServerResponse<User> login(@RequestBody User user) {
         ServerResponse<User> response = userService.login(user);
-        log.trace("======trace");
-        log.debug("======debug");
-        log.info("======info");
-        log.warn("======warn");
-        log.error("======error");
-        log.info(user.toString());
+        if (response.isSuccess()){
+            return response;
+        }
         return response;
     }
 

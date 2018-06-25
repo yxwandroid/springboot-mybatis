@@ -83,6 +83,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ServerResponse<User> updateUser(User user) {
+        // 用户是否存在校验
+        //
         int i = userMapper.updateByPrimaryKey(user);
         if (i==0){
             return ServerResponse.createByErrorMessage("更新失败");
