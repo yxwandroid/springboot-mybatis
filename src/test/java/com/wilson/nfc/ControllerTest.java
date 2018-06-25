@@ -1,6 +1,5 @@
-package com.wilson.nfc.controller;
+package com.wilson.nfc;
 
-import com.wilson.nfc.NfcJavaApplication;
 import com.wilson.nfc.common.ServerResponse;
 import com.wilson.nfc.controller.portal.UserController;
 import com.wilson.nfc.model.User;
@@ -27,14 +26,14 @@ public class ControllerTest {
     @Autowired
     UserController userController;
 
-    @Test
+   // @Test
     public void testUserId() {
         ServerResponse<User> response = userController.findUserById(1);
         log.info(response.getData().getUsername());
     }
 
 
-    @Test
+  //  @Test
     public void testegieter() {
         User user1 = new User();
         user1.setUsername("wilson");

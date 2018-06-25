@@ -22,13 +22,13 @@ public class ServiceTest {
     @Autowired
     private UserService userService;
 
-    @Test
+    //@Test
     public void testService() {
         ServerResponse<User> user = userService.findUserById(1);
         log.info("ServiceTest" + "-----" + user.getData().getUsername());
     }
 
-    @Test
+   // @Test
     public void testRegieter() {
         User user1 = new User();
         user1.setUsername("wilson");
