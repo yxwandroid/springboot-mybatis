@@ -1,4 +1,4 @@
-package com.wilson.nfc.controller;
+package com.wilson.nfc.controller.portal;
 
 import com.github.pagehelper.PageInfo;
 import com.wilson.nfc.model.Product;

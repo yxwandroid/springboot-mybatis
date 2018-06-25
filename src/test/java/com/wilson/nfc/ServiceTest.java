@@ -27,4 +27,14 @@ public class ServiceTest {
         ServerResponse<User> user = userService.findUserById(1);
         log.info("ServiceTest" + "-----" + user.getData().getUsername());
     }
+
+    @Test
+    public void testRegieter() {
+        User user1 = new User();
+        user1.setUsername("wilson");
+        user1.setPassword("wilson");
+        user1.setPhone("18515318685");
+        ServerResponse<User> user = userService.regieter(user1);
+        log.info("ServiceTest" + "-----" + user.getMsg());
+    }
 }

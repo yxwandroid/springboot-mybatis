@@ -15,6 +15,39 @@ public interface UserService {
      */
     ServerResponse<User> findUserById(Integer id);
 
-    ServerResponse<User> login(String userName,String password);
+    /**
+     * 登录
+     * @param user
+     * @return
+     */
+    ServerResponse<User> login(User user);
+
+    /**
+     * 注册
+     * @param user
+     * @return
+     */
+    ServerResponse<User> regieter(User user);
+
+    /**
+     * 添加用户
+     * @param user
+     * @return
+     */
+    ServerResponse<User> addUser(User user);
+
+    /**
+     * 删除用户
+     * @param userId
+     * @return
+     */
+    ServerResponse<User> deleteUser(Integer userId);
+
+    /**
+     * 更新用户信息
+     * @param user
+     * @return
+     */
+    ServerResponse<User> updateUser(User user);
 
 }

@@ -15,9 +15,9 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
-Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.UserController.findOneCity(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.portal.UserController.getUserInfo()
+Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.portal.UserController.findOneCity(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -35,11 +35,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findOneCity was user-controller
-Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method getUserInfo was user-controller
-Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -50,8 +50,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.model.User(true)
@@ -62,16 +62,16 @@ Cache Key Generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/user/id.com.wilson.nfc.controller.portal.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.portal.UserController.findOneCity.DefaultGenericTypeNamingStrategy
 Group for method findOneCity was user-controller
 Group for method findOneCity was user-controller
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache models with key java.lang.String(true)
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
 Group for method getUserInfo was user-controller
 Group for method getUserInfo was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -98,9 +98,9 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
-Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.UserController.findOneCity(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.portal.UserController.getUserInfo()
+Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.portal.UserController.findOneCity(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -118,11 +118,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findOneCity was user-controller
-Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method getUserInfo was user-controller
-Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -133,8 +133,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.model.User(true)
@@ -145,16 +145,16 @@ Cache Key Generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/user/id.com.wilson.nfc.controller.portal.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.portal.UserController.findOneCity.DefaultGenericTypeNamingStrategy
 Group for method findOneCity was user-controller
 Group for method findOneCity was user-controller
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache models with key java.lang.String(true)
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
 Group for method getUserInfo was user-controller
 Group for method getUserInfo was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -166,9 +166,9 @@ No active profile set, falling back to default profiles: default
 Refreshing org.springframework.web.context.support.GenericWebApplicationContext@43f02ef2: startup date [Thu Jun 21 15:08:57 CST 2018]; root of context hierarchy
 Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e1195a3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
-Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.UserController.findOneCity(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.portal.UserController.getUserInfo()
+Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.portal.UserController.findOneCity(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -183,11 +183,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findOneCity was user-controller
-Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method getUserInfo was user-controller
-Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -198,8 +198,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.model.User(true)
@@ -210,16 +210,16 @@ Cache Key Generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/user/id.com.wilson.nfc.controller.portal.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.portal.UserController.findOneCity.DefaultGenericTypeNamingStrategy
 Group for method findOneCity was user-controller
 Group for method findOneCity was user-controller
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache models with key java.lang.String(true)
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
 Group for method getUserInfo was user-controller
 Group for method getUserInfo was user-controller
 Started ServiceTest in 7.327 seconds (JVM running for 9.273)
@@ -249,9 +249,9 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
-Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.UserController.findOneCity(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.portal.UserController.getUserInfo()
+Mapped "{[/api/user/id],methods=[GET]}" onto public com.wilson.nfc.model.User com.wilson.nfc.controller.portal.UserController.findOneCity(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -269,11 +269,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findOneCity was user-controller
-Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findOneCity belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method getUserInfo was user-controller
-Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -284,8 +284,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.model.User(true)
@@ -296,16 +296,16 @@ Cache Key Generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/user/id.com.wilson.nfc.controller.portal.UserController.findOneCity.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/user/id.com.wilson.nfc.controller.portal.UserController.findOneCity.DefaultGenericTypeNamingStrategy
 Group for method findOneCity was user-controller
 Group for method findOneCity was user-controller
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache models with key java.lang.String(true)
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
 Group for method getUserInfo was user-controller
 Group for method getUserInfo was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -324,8 +324,8 @@ Skipping MapperFactoryBean with name 'userMapper' and 'com.wilson.nfc.mapper.Use
 No MyBatis mapper was found in '[com.wilson.nfc.mapper]' package. Please check your configuration.
 Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d4cdce1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.portal.UserController.getUserInfo()
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -340,9 +340,9 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method getUserInfo was user-controller
-Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -353,16 +353,16 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache models with key java.lang.String(true)
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
 Group for method getUserInfo was user-controller
 Group for method getUserInfo was user-controller
 Started ControllerTest in 7.649 seconds (JVM running for 9.34)
@@ -372,8 +372,8 @@ No active profile set, falling back to default profiles: default
 Refreshing org.springframework.web.context.support.GenericWebApplicationContext@28261e8e: startup date [Thu Jun 21 21:17:59 CST 2018]; root of context hierarchy
 Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e1195a3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.portal.UserController.getUserInfo()
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -388,9 +388,9 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method getUserInfo was user-controller
-Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -401,16 +401,16 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache models with key java.lang.String(true)
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
 Group for method getUserInfo was user-controller
 Group for method getUserInfo was user-controller
 Started ControllerTest in 8.276 seconds (JVM running for 10.348)
@@ -432,8 +432,8 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.UserController.getUserInfo()
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/getUserInfo],methods=[GET]}" onto public java.lang.String com.wilson.nfc.controller.portal.UserController.getUserInfo()
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -451,9 +451,9 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method getUserInfo was user-controller
-Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: getUserInfo belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -464,16 +464,16 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache models with key java.lang.String(true)
 Cache Key Generated: java.lang.String(true)
 Caching aspect applied for cache modelDependencies with key java.lang.String(true)
-Cache key generated: /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Cache key generated: /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /getUserInfo.com.wilson.nfc.controller.portal.UserController.getUserInfo.DefaultGenericTypeNamingStrategy
 Group for method getUserInfo was user-controller
 Group for method getUserInfo was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -503,9 +503,9 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.login(java.lang.String,java.lang.String)
-Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.findUserById(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.login(java.lang.String,java.lang.String)
+Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.findUserById(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -523,11 +523,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findUserById was user-controller
-Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method login was user-controller
-Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -538,8 +538,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -556,8 +556,8 @@ Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
 Group for method findUserById was user-controller
 Group for method findUserById was user-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -566,8 +566,8 @@ Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.U
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
 Group for method login was user-controller
 Group for method login was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -597,9 +597,9 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.login(java.lang.String,java.lang.String)
-Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.findUserById(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.login(java.lang.String,java.lang.String)
+Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.findUserById(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -617,11 +617,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findUserById was user-controller
-Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method login was user-controller
-Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -632,8 +632,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -650,8 +650,8 @@ Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
 Group for method findUserById was user-controller
 Group for method findUserById was user-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -660,8 +660,8 @@ Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.U
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
 Group for method login was user-controller
 Group for method login was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -691,9 +691,9 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.login(java.lang.String,java.lang.String)
-Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.findUserById(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.login(java.lang.String,java.lang.String)
+Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.findUserById(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -711,11 +711,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findUserById was user-controller
-Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method login was user-controller
-Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -726,8 +726,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -744,8 +744,8 @@ Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
 Group for method findUserById was user-controller
 Group for method findUserById was user-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -754,8 +754,8 @@ Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.U
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
 Group for method login was user-controller
 Group for method login was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -785,9 +785,9 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.login(java.lang.String,java.lang.String)
-Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.findUserById(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.login(java.lang.String,java.lang.String)
+Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.findUserById(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -805,11 +805,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findUserById was user-controller
-Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method login was user-controller
-Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -820,8 +820,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -838,8 +838,8 @@ Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
 Group for method findUserById was user-controller
 Group for method findUserById was user-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -848,8 +848,8 @@ Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.U
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
 Group for method login was user-controller
 Group for method login was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -879,9 +879,9 @@ Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
 Mapping filter: 'httpPutFormContentFilter' to: [/*]
 Mapping filter: 'requestContextFilter' to: [/*]
 加载：MyBatis分页插件PageHelper
-Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
-Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.login(java.lang.String,java.lang.String)
-Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.UserController.findUserById(java.lang.Integer)
+Mapped "{[/api/categoryId],methods=[GET]}" onto public com.github.pagehelper.PageInfo com.wilson.nfc.controller.portal.ProductController.ProductList(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+Mapped "{[/user/login],methods=[POST]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.login(java.lang.String,java.lang.String)
+Mapped "{[/user/id],methods=[GET]}" onto public com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User> com.wilson.nfc.controller.portal.UserController.findUserById(java.lang.Integer)
 Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
 Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
 Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
@@ -899,11 +899,11 @@ Context refreshed
 Found {0} custom documentation plugin(s)
 Scanning for api listing references
 Group for method ProductList was product-controller
-Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.ProductController}]] 
+Request mapping: ProductList belongs to groups: [[ResourceGroup{groupName='product-controller', position=0, controller=com.wilson.nfc.controller.portal.ProductController}]]
 Group for method findUserById was user-controller
-Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: findUserById belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Group for method login was user-controller
-Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.UserController}]] 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.wilson.nfc.controller.portal.UserController}]]
 Created resource listing Path: /default/product-controller Description: product-controller Position: 0
 Created resource listing Path: /default/user-controller Description: user-controller Position: 0
 Cache Key Generated: com.github.pagehelper.PageInfo(true)
@@ -914,8 +914,8 @@ Cache Key Generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelDependencies with key com.github.pagehelper.PageInfo(true)
 Cache key generated: com.github.pagehelper.PageInfo(true)
 Caching aspect applied for cache modelProperties with key com.github.pagehelper.PageInfo(true)
-Cache key generated: /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Cache key generated: /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /api/categoryId.com.wilson.nfc.controller.portal.ProductController.ProductList.DefaultGenericTypeNamingStrategy
 Group for method ProductList was product-controller
 Group for method ProductList was product-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -932,8 +932,8 @@ Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/id.com.wilson.nfc.controller.portal.UserController.findUserById.DefaultGenericTypeNamingStrategy
 Group for method findUserById was user-controller
 Group for method findUserById was user-controller
 Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
@@ -942,8 +942,8 @@ Cache Key Generated: com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.U
 Caching aspect applied for cache modelDependencies with key com.wilson.nfc.common.ServerResponse<com.wilson.nfc.model.User>(true)
 Cache key generated: com.wilson.nfc.model.User(true)
 Caching aspect applied for cache modelProperties with key com.wilson.nfc.model.User(true)
-Cache key generated: /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
-Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.UserController.login.DefaultGenericTypeNamingStrategy
+Cache key generated: /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
+Caching aspect applied for cache operations with key /user/login.com.wilson.nfc.controller.portal.UserController.login.DefaultGenericTypeNamingStrategy
 Group for method login was user-controller
 Group for method login was user-controller
 Starting ProtocolHandler ["http-nio-8080"]
@@ -955,3 +955,8 @@ FrameworkServlet 'dispatcherServlet': initialization started
 FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
 HikariPool-1 - Starting...
 HikariPool-1 - Start completed.
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@67a20f67: startup date [Thu Jun 21 22:57:43 CST 2018]; root of context hierarchy
+Unregistering JMX-exposed beans on shutdown
+Unregistering JMX-exposed beans
+HikariPool-1 - Shutdown initiated...
+HikariPool-1 - Shutdown completed.

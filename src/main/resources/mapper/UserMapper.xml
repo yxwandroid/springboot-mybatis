@@ -69,8 +69,8 @@
       #{email,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{question,jdbcType=VARCHAR}, 
       #{answer,jdbcType=VARCHAR}, #{role,jdbcType=INTEGER}, #{nickname,jdbcType=VARCHAR}, 
       #{uuid,jdbcType=VARCHAR}, #{extra1,jdbcType=VARCHAR}, #{extra2,jdbcType=VARCHAR}, 
-      #{extra3,jdbcType=VARCHAR}, #{headimg,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
-      #{updateTime,jdbcType=TIMESTAMP})
+      #{extra3,jdbcType=VARCHAR}, #{headimg,jdbcType=VARCHAR}, now(),
+      now())
   </insert>
   <insert id="insertSelective" parameterType="com.wilson.nfc.model.User">
     <!--
@@ -261,10 +261,32 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
+  <select id="checkUserName"  resultType="int"  parameterType="String">
+    SELECT   count(1) from  nfc_user
+    where  username =#{username}
+  </select>
 
-  <select id="selectAll" resultMap="BaseResultMap">
+  <select id="checkPassword" resultType="int" parameterType="string">
+    SELECT   count(1) from  nfc_user
+    where  password =#{password}
+  </select>
+
+
+  <select id="selectList" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List" />
     from nfc_user
   </select>
+
+  <select id="selectLogin" resultMap="BaseResultMap" parameterType="map">
+    SELECT
+    <include refid="Base_Column_List" />
+    from nfc_user
+    where username = #{username}
+    and password = #{password}
+  </select>
+
+
+
+
 </mapper>

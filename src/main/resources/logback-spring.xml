@@ -47,4 +47,6 @@
         <appender-ref ref="fileInfoLog" />
         <appender-ref ref="fileErrorLog" />
     </root>
+    <!--&lt;!&ndash; logback为java中的包 &ndash;&gt;-->
+    <!--<logger name="com.wilson.nfc.controller"/>-->
 </configuration>

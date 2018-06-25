@@ -2,6 +2,7 @@ package com.wilson.nfc.controller;
 
 import com.wilson.nfc.NfcJavaApplication;
 import com.wilson.nfc.common.ServerResponse;
+import com.wilson.nfc.controller.portal.UserController;
 import com.wilson.nfc.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -27,9 +28,22 @@ public class ControllerTest {
     UserController userController;
 
     @Test
-    public void testCreateMarker() {
+    public void testUserId() {
         ServerResponse<User> response = userController.findUserById(1);
         log.info(response.getData().getUsername());
     }
+
+
+    @Test
+    public void testegieter() {
+        User user1 = new User();
+        user1.setUsername("wilson");
+        user1.setPassword("wilson");
+        user1.setPhone("18515318685");
+        ServerResponse<User> response = userController.register(user1);
+        log.info(response.getMsg());
+    }
+
+
 
 }
