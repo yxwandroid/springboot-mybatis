@@ -74,6 +74,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ServerResponse<User> deleteUser(Integer userId) {
+
+        // 根据id查询出数据库的用户信息
+        User user1 = userMapper.selectByPrimaryKey(userId);
+        if (user1 ==null){
+            return  ServerResponse.createByErrorMessage("用户不存在");
+        }
+
         int i = userMapper.deleteByPrimaryKey(userId);
         if (i==0){
             return ServerResponse.createByErrorMessage("删除失败");
@@ -84,8 +91,26 @@ public class UserServiceImpl implements UserService {
     @Override
     public ServerResponse<User> updateUser(User user) {
         // 用户是否存在校验
-        //
-        int i = userMapper.updateByPrimaryKey(user);
+        int resultId = userMapper.checkUserName(user.getUsername());
+        if (resultId ==0){
+            return ServerResponse.createByErrorMessage("用户不存在");
+        }
+        // 根据id查询出数据库的用户信息
+        User user1 = userMapper.selectByPrimaryKey(user.getId());
+        if (user1 ==null){
+            return  ServerResponse.createByErrorMessage("用户不存在");
+        }
+        user1.setEmail(user.getEmail());
+        user1.setPhone(user.getPhone());
+        user1.setQuestion(user.getQuestion());
+        user1.setAnswer(user.getAnswer());
+        user1.setNickname(user.getNickname());
+        user1.setUuid(user.getUuid());
+        user1.setExtra1(user.getExtra1());
+        user1.setExtra2(user.getExtra2());
+        user1.setExtra3(user.getExtra3());
+        user1.setHeadimg(user.getHeadimg());
+        int i = userMapper.updateByPrimaryKey(user1);
         if (i==0){
             return ServerResponse.createByErrorMessage("更新失败");
         }
