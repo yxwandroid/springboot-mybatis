@@ -1,6 +1,9 @@
 package com.wilson.nfc.mapper;
 
 import com.wilson.nfc.model.Category;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface CategoryMapper {
     /**
@@ -50,4 +53,13 @@ public interface CategoryMapper {
      * @mbggenerated Thu Jun 21 21:30:20 CST 2018
      */
     int updateByPrimaryKey(Category record);
+
+
+//    int selectByCategoryName(@Param("categoryName") String categoryName );
+
+    int selectByCategoryName(String categoryName );
+    Category selectByCategory(String categoryName);
+
+    List<Category> selectList();
+
 }
